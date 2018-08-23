@@ -8,6 +8,8 @@ module.exports = function() {
       (process.env.NODE_ENV === 'production' ? '#000' : '#f00') +
       '; color: #fff;',
     process.env.NODE_ENV,
-    v ? Array.prototype.slice.call(arguments).toString() : process.env.VERSION
+    v
+      ? Array.prototype.slice.call(arguments).toString()
+      : process.env.VERSION || process.env.REACT_APP_VERSION
   ); // eslint-disable-line
 };
