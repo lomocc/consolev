@@ -1,7 +1,7 @@
 /**
  * Created by Vincent on 2017/10/23.
  */
-module.exports = function() {
+module.exports = function(v) {
   console.log(
     '%c [%s] %s ',
     'background: ' +
